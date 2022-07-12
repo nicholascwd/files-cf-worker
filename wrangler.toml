@@ -1,0 +1,11 @@
+name = "files"
+main = "src/index.js"
+compatibility_date = "2022-07-12"
+
+[[r2_buckets]]
+binding = 'MY_BUCKET' # <~ valid JavaScript variable name
+bucket_name = 'r2-pub-1'
+preview_bucket_name = 'r2-pub-1-dev'
+
+# Insert API_KEY into secrets via wrangler secrets put
+# Create two buckets, corresponding to bucket_name and preview_bucket_name on the Cloudflare dashboard prior to publishing this worker.
